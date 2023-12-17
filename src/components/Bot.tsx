@@ -476,15 +476,25 @@ export const Bot = (props: BotProps & { class?: string }) => {
               'border-top-right-radius': props.isFullPage ? '0px' : '6px',
             }}
           >
-            <Show when={props.titleAvatarSrc}>
+            
+          <!-- turn off Avatar control
+          <Show when={props.titleAvatarSrc}>
               <>
+          
                 <div style={{ width: '15px' }} />
                 <Avatar initialAvatarSrc={props.titleAvatarSrc} />
               </>
             </Show>
+                    
             <Show when={props.title}>
+         
               <span class="px-3 whitespace-pre-wrap font-semibold max-w-full">{props.title}</span>
+             
             </Show>
+             -->  
+
+           <span class="px-3 whitespace-pre-wrap font-semibold max-w-full">Hosting Assistant Chatbot</span>
+            
             <div style={{ flex: 1 }} />
             <DeleteButton
               sendButtonColor={props.bubbleTextColor}
